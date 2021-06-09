@@ -19,10 +19,18 @@ Rubric:
 Strings to Nums:
 
 * Given 1000 digits of PI as strings, return an array of the digits as numbers
+- function stringsToNums that takes in an arr
+- loop through the arr to .parseInt() each string to a number
+- return those numbers in a new array, numsArr
 
 * With the same numbers, find the sum of the even values
+- find the even numbers of the numsArr
+- if number % 2 === 0, return that number in a new arr, evens
+- reduce evens to find the sum, (acc, curr) => acc + curr;
+- evens.reduce(sum)
 
-* Find the index of the first value when added to it's index = 512 (#ATX!!)
+* Find the index of the first value that = 512 when added to it's index (#ATX!!)
+- findIndex of value when value + index === 512
 
 Weather:
 
