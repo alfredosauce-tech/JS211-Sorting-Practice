@@ -3,9 +3,11 @@ const strNums = ["1","4","1","5","9","2","6","5","3","5","8","9","7","9","3","2"
 // STRINGS TO NUMS /////
 
 // Given 1000 digits of PI as strings, return an array of the digits as numbers
+
 // function stringsToNums that takes in an arr
 // loop through the arr to .parseInt() each string to a number
 // return those numbers in a new array
+
 const stringsToNums = (arr) => {
   let newArr = [];
   arr.forEach((number) => {
@@ -19,9 +21,11 @@ console.log('Array of Numbers:', numsArr);
 
 
 // With the same numbers, find the sum of the even values
+
 // find the even numbers of the numsArr
 // if number % 2 === 0, return that number in a new arr, evens
 // reduce evens to find the sum, then return the sum
+
 const sumEvens = (arr) => {
   let evens = [];
   arr.forEach((number) => {
@@ -36,7 +40,9 @@ const sumEvens = (arr) => {
 console.log('Sum of Even Numbers:', sumEvens(numsArr));
 
 // Find the index of the first value that = 512 when added to it's index (#ATX!!)
+
 // findIndex of value when value + index === 512
+
 const atxIdx = numsArr.findIndex((num, index) => {
   return num + index === 512;
 })
@@ -113,10 +119,12 @@ const weather = [
 ];
 
 // using a higher order function, create an array of the unique 'weather_state_name' values of the weather array. Your function should return the following array ['Light Cloud', 'Heavy Cloud', 'Showers']
+
 // weather array of objects - weather[].weather_state_name
 // forEach object, return the weather_state_name in a new array
 // loop through the new array to find the unique weather_state_name values
 // if i and the indexOf i match, return the unique result
+
 const weatherStates = (arr) => {
   let weatherArr = [];
   let resultArr = [];
@@ -133,8 +141,10 @@ const weatherStates = (arr) => {
 console.log('Unique Weather State Names:', weatherStates(weather));
 
 //find the id of the object in weather that has a min_temp of 15.915
+
 // loop through weather array
 // if weather[i].min_temp === 15.915, return weather[i].id
+
 const idealTemp = (arr) => {
   for (let i = 0; i < arr.length; i++) {
     if (weather[i].min_temp === 15.915) {
